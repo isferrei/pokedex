@@ -79,17 +79,17 @@ export default function Pokemon({ pokemon }: PokemonProps) {
 
 export async function getStaticPaths() {
     const res = await api.get('/pokemon/');
+    const pokemonList = res.data.results;
 
-    const paths = res.data.results.map((index: number) => ({
-
-        params: { id: String(index + 1) },
-
-    }))
+    const paths = pokemonList.map((pokemon: any) => {
+        const id = pokemon.url.match(/\/pokemon\/(\d+)/)[1];
+        return { params: { id } };
+    });
 
     return {
         paths,
         fallback: true,
-    }
+    };
 }
 
 
