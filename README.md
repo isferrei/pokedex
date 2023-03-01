@@ -6,11 +6,12 @@ To run the project locally, you will need to have Node.js installed on your comp
 
 Once you have Node.js installed, follow these steps:
 
-Clone the repository to your local machine using git clone https://github.com/isferrei/pokedex.git
-Navigate to the project directory using cd pokedex
-Install the project dependencies using npm install
-Start the development server using npm run dev
-Open a web browser and navigate to http://localhost:3000
+- Clone the repository to your local machine using git clone https://github.com/isferrei/pokedex.git
+- Navigate to the project directory using cd pokedex
+- Install the project dependencies using npm install
+- Start the development server using npm run dev
+- Open a web browser and navigate to http://localhost:3000
+
 Usage
 To use the Pokedex, simply type the name or number of the Pokemon you want to search for into the search bar on the home page. The app will then display a list of matching Pokemon, and you can click on one to view its details.
 
